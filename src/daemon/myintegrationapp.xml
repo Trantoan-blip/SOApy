@@ -1,0 +1,33 @@
+<service>
+	<id>myintegrationapp.exe</id>
+	<name>MyIntegrationApp</name>
+	<description>Node.js API Service - Gmail, Calendar, LinkedIn</description>
+	<executable>D:\MSI\TestDownload\node.exe</executable>
+	<argument>--harmony</argument>
+	<argument>C:\SOA\node_modules\node-windows\lib\wrapper.js</argument>
+	<argument>--file</argument>
+	<argument>C:\SOA\src\server.js</argument>
+	<argument>--scriptoptions=</argument>
+	<argument>--log</argument>
+	<argument>MyIntegrationApp wrapper</argument>
+	<argument>--grow</argument>
+	<argument>0.25</argument>
+	<argument>--wait</argument>
+	<argument>1</argument>
+	<argument>--maxrestarts</argument>
+	<argument>3</argument>
+	<argument>--abortonerror</argument>
+	<argument>n</argument>
+	<argument>--stopparentfirst</argument>
+	<argument>undefined</argument>
+	<logmode>rotate</logmode>
+	<stoptimeout>30sec</stoptimeout>
+	<env name="PORT" value="3000"/>
+	<env name="NODE_ENV" value="production"/>
+	<serviceaccount>
+		<domain>DESKTOP-0FGKUU0</domain>
+		<user>LocalSystem</user>
+		<password></password>
+	</serviceaccount>
+	<workingdirectory>C:\SOA\src</workingdirectory>
+</service>
