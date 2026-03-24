@@ -41,7 +41,6 @@ Một ứng dụng Python tích hợp với các dịch vụ khác nhau bao gồ
    ```
 
 4. Thiết lập biến môi trường:
-   - Sao chép `.env.example` thành `.env`
    - Thêm các khóa API và cấu hình của bạn:
      ```
      GOOGLE_CLIENT_ID=your_google_client_id
