@@ -51,17 +51,11 @@ pip install -r requirements.txt
 
 ## Cấu Hình
 
-### Bước 1: Tạo File `.env`
-
-Copy file `.env.example`:
-
-```bash
-copy .env.example .env
-```
+### Bước 1: Tạo File `.env.example`
 
 ### Bước 2: Thêm API Credentials
 
-Mở file `.env` và cập nhật:
+Mở file `.env.example` và cập nhật:
 
 ```env
 # Google API Credentials
@@ -270,7 +264,7 @@ pip install -r requirements.txt
 ### 2. "Port 3000 already in use"
 
 **Giải pháp:**
-Thay đổi PORT trong `.env`:
+Thay đổi PORT trong `.env.example`:
 
 ```env
 PORT=5000
@@ -344,7 +338,7 @@ SOA/
 
 ### Bảo Mật
 
-- ✅ **KHÔNG** commit `.env` hoặc `credentials.json`
+- ✅ **KHÔNG** commit `.env.example` hoặc `credentials.json`
 - ✅ Kiểm tra `.gitignore` đã bao gồm các file nhạy cảm
 - ✅ Sử dụng environment variables cho secrets
 
