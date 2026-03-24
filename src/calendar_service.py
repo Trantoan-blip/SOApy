@@ -3,7 +3,7 @@ import pickle
 from datetime import datetime
 from google.auth.transport.requests import Request
 import googleapiclient.discovery
-from gmail_service import get_credentials
+from .gmail_service import get_credentials
 
 TOKEN_FILE = 'token.pickle'
 
